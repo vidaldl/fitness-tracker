@@ -26,9 +26,8 @@ export class LoginComponent implements OnInit {
   onSubmit() {
 
     this.authService.login({
-      // @ts-ignore
+
       email: this.loginForm.value.email,
-      // @ts-ignore
       password: this.loginForm.value.password
     })
   }
